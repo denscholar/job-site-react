@@ -23,7 +23,7 @@ const Job = (props) => {
                 <div className="mb-5">
                     {descriptionLength}
                 </div>
-                <button onClick={() => setShowDescription((prevState) => !prevState)} style={{ backgroundColor: "blue", width: "auto", padding: "2px 20px", borderRadius: "10px", color: "White", marginBottom: "10px" }}>{showDescription ? 'See More' : "See Less"}</button>
+                <button onClick={() => setShowDescription((prevState) => !prevState)} style={{ backgroundColor: "blue", width: "auto", padding: "2px 20px", borderRadius: "10px", color: "White", marginBottom: "10px" }}>{showDescription ? 'See Less' : "See More"}</button>
 
 
                 <h3 className="text-indigo-500 mb-2">{salary}</h3>

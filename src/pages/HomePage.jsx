@@ -17,7 +17,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <JobListings />
+            <JobListings isHome={true} />
             <ViewAllJobs />
         </div>
     )
