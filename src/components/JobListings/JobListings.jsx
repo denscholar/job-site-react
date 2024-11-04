@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Job from '../Job/Job'
-import ClipLoader from "react-spinners/ClipLoader";
+import Spinner from '../Spinner/Spinner';
 
 
 
@@ -35,7 +35,7 @@ const JobListings = ({ isHome = false }) => {
         <h5 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
           {isHome ? 'Recent Jobs' : 'All Jobs'}
         </h5>
-        {loading ? <div style={{ display: "flex", justifyContent: "center" }}><ClipLoader /></div> : (
+        {loading ? <div style={{ display: "flex", justifyContent: "center" }}><Spinner/></div> : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {jobs.map((job) => {
               return (
